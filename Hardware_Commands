@@ -1,0 +1,13 @@
+Hardware Commands
+- `lscpu` - Displays information about the CPU architecture
+- `lsblk -a` - Lists information about all the block devices attached to the system
+- `free` - Displays system memory (RAM) details in KB
+- `free -m` - Displays system memory (RAM) details in MB
+- `df` - Reports file system disk space usage
+- `df -h` - Reports file system disk space usage in human-readable format
+- `du <filename>` - Summarizes disk usage of each file, recursively for directories
+- `du -sh <filename>` - Summarizes disk usage in human-readable format
+- `cat /proc/cpuinfo` - Displays information about the CPU architecture
+- `cat /proc/meminfo` - Displays system memory (RAM) details
+- `fdisk -l` - Lists the partition tables for the specified devices
+- `fdisk -s <partition>` - Displays partition size(s) in blocks (to convert blocks into MB: blocksize*1024/1000000)
