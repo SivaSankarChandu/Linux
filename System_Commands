@@ -1,0 +1,40 @@
+System Commands
+•	uname - used to get OS
+•	uname -r - Displays Linux kernel version
+•	uname -a - Displays all information about Linux system
+•	uptime - Displays how long the system has been running
+•	uptime -p - Shows uptime in pretty format
+•	uptime -s - Shows the time when the system was last started
+•	hostname - Displays the hostname
+•	hostname -i - Displays IP addresses for the hostname
+•	hostnamectl set-hostname "swiggy" - used to change hostname
+•	last reboot - Shows system reboot history
+•	ip addr - Shows addresses assigned to all network interfaces
+•	ip route - Shows routing table
+•	ifconfig - Displays the IP address of the system
+•	date - Shows system date and timestamp
+•	date +"%d" - Prints day of the month (01-31)
+•	date +"%m" - Prints the month of the year (01-12)
+•	date +"%y" - Prints the last two digits of the year
+•	date +"%H" - Prints the hour (00-23)
+•	date +"%M" - Prints the minute of the hour (00-59)
+•	date +"%S" - Prints the current seconds count in the minute (00-60)
+•	date +"%D" - Prints date in MM/DD/YY format
+•	date +"%F" - Prints the full date as YYYY-MM-DD
+•	date +"%A" - Prints the day of the week (e.g., Saturday-Sunday)
+•	date +"%B" - Prints the month (e.g., January-December)
+•	who - Prints information about all users who are currently logged in
+•	whoami - Prints the current username
+•	top - Lists the running processes on the system
+•	ps - Displays information about a selection of the active processes
+•	timedatectl - used to get timezones
+•	timedatectl set-timezone Asia/Kolkata - used to change the timezone to IST
+•	df -h - Displays disk space usage in human-readable format
+•	du -sh - Shows the size of the current directory
+•	free -h - Displays the amount of free and used memory in the system
+•	lsblk - Lists information about all available or the specified block devices
+•	mount - Displays all currently mounted filesystems
+•	dmesg - Prints the message buffer of the kernel
+•	systemctl status - Checks the status of a service
+•	journalctl -xe - Shows the systemd journal log with extended information
+•	htop - Interactive process viewer (an improved version of top)
