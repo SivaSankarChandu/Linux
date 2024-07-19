@@ -1,0 +1,32 @@
+- `find . -name file` - Used to find a file in the current directory
+- `find /proc/ -name filename` - Used to find a file in the proc directory
+- `find . -type d -name folder` - Used to find a folder in the current directory
+- `find . -type f -name <file1.txt>` - Used to find a file in the current directory
+- `find . -type f -perm 777` - Finds all the files whose permissions are 777 in the current directory
+- `find . -type f ! -perm 777` - Finds all the files whose permissions are NOT 777 in the current directory
+- `find . -perm /u=r` - Finds all Read-Only files in the current directory
+- `find . -perm /a=x` - Finds all executable files in the current directory
+- `find . -perm /a=w` - Finds all writable files in the current directory
+- `find . -type f -empty` - Finds all empty files in the current directory
+- `find . -type d -empty` - Finds all empty directories in the current directory
+- `find / -user <username>` - Finds all the files owned by a specific user in the / directory
+- `find / -group groupname` - Finds all the files owned by a specific group in the / directory
+- `find . -mtime 10` - Finds all the files which were modified 10 days ago in the current directory
+- `find / -atime 100` - Finds all the files which were accessed 100 days ago in the current directory
+- `find . -cmin -60` - Finds all the files which were changed in the last 1 hour in the current directory
+- `find . -mmin -60` - Finds all the files which were modified in the last 1 hour in the current directory
+- `find . -amin -60` - Finds all the files which were accessed in the last 1 hour in the current directory
+- `find . -size 1k` - Finds all 1KB files in the current directory
+- `find / -size +50M -size -100M` - Finds all the files which are greater than 50MB and less than 100MB in the / directory
+- `locate filename` - Used to locate a file in Linux (by default it will not locate, we need to update the db every time)
+- `sudo updatedb` - Used to update the Linux database
+- `locate -i filename` - Used to search for a file case-insensitively
+- `locate -n 5 "*.txt"` - Used to search for the top 5 text files
+- `locate -c aws*` - Used to count the number of AWS files present in the server
+- `grep "word" file` - Used to search for a word in a file
+- `grep "word" file1 file2 file3` - Used to search for a word in multiple files
+- `grep -l "word" file1 file2 file3` - Prints the filenames which contain the word
+- `grep -n "word" file` - Used to search for a word in a file with line numbers
+- `grep -i "word" file` - Searches the word in the file case-insensitively
+- `grep -c "word" file` - Gives the count of the word in a file
+- `grep -e <pattern1> -e <pattern2> <file1>` - To search for multiple patterns in file1
