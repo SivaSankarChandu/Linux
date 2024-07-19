@@ -1,0 +1,35 @@
+### Understanding Permissions
+
+Linux permissions are represented by three digits, where:
+- `4` stands for Read
+- `2` stands for Write
+- `1` stands for Execute
+
+For example:
+- `7` (4+2+1) gives Read, Write, and Execute permissions.
+- `6` (4+2) gives Read and Write permissions.
+- `5` (4+1) gives Read and Execute permissions.
+- `4` gives Read permission only.
+
+### Commands
+
+1. `chown username file/foldername` - To change the user of a file/folder
+2. `chown -R username foldername` - To change the user of a folder along with its files
+3. `chown username foldername/*` - To change the user of all files in the folder
+4. `chgrp groupname file/foldername` - To change the group of a file/folder
+5. `chgrp -R groupname foldername` - To change the group of a folder along with its files
+6. `chgrp groupname foldername/*` - To change the group of all files in the folder
+7. `chown username:groupname file/foldername` - To change the user and group of a file/folder
+8. `chown -R username:groupname foldername` - To change the user and group of a folder along with its files
+9. `chown username:groupname foldername/*` - To change the user and group of all files in the folder
+10. `chmod 777 file/foldername` - To change the permissions of a file/folder to Read, Write, and Execute for everyone
+11. `chmod -R 777 foldername` - To change the permissions of a folder and its files to Read, Write, and Execute for everyone
+12. `chmod 567 foldername/*` - To change the permissions of all files in the folder (Owner: Read-Write-Execute, Group: Read-Write, Others: Execute)
+13. `chmod 644 file` - To change the permissions of a file (Owner: Read-Write, Group: Read, Others: Read)
+14. `chmod 755 folder` - To change the permissions of a folder (Owner: Read-Write-Execute, Group: Read-Execute, Others: Read-Execute)
+15. `chmod 600 file` - To change the permissions of a file (Owner: Read-Write, Group: None, Others: None)
+16. `chmod 700 folder` - To change the permissions of a folder (Owner: Read-Write-Execute, Group: None, Others: None)
+17. `chmod u+x filename` - To add execute permission for the user
+18. `chmod g-w filename` - To remove write permission for the group
+19. `chmod o+r filename` - To add read permission for others
+20. `chmod a-x filename` - To remove execute permission for everyone
