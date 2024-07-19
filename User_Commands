@@ -1,0 +1,25 @@
+1. `useradd username` - Add a user
+2. `useradd -e 2024-01-31 username` - Set the expiration date of the user. After the date, the user will no longer be available
+3. `useradd -U username` - Create a group with the same name as the user and add the user to the group
+4. `useradd -M username` - Create a username without a home directory
+5. `useradd -D` - Print the default home directory, default shell, default expiration date, and other settings
+6. `userdel username` - Delete a user
+7. `userdel -f username` - Forcefully delete a user
+8. `userdel -r username` - Delete the user along with their home directory
+9. `chage -l username` - Get user expiry details
+10. `su - username` - Login as the specified user
+11. `passwd username` - Set a password for a user
+12. `groupadd groupname` - Add a group
+13. `groupmod -n newgroup oldgroup` - Change the group name
+14. `groupdel groupname` - Delete a group
+15. `gpasswd -d username groupname` - Remove a user from a group
+16. `usermod -aG group1,group2 username` - Add a user to multiple groups
+17. `usermod -G groupname username` - Set the user's groups, removing them from any other groups
+18. `chage -E 2024-01-31 username` - Set the account expiration date for a user
+19. `usermod -L username` - Lock a user account
+20. `usermod -U username` - Unlock a user account
+21. `id username` - Display user ID (UID) and group ID (GID) information
+22. `groups username` - Display the groups a user belongs to
+23. `getent group` - List all groups
+24. `getent passwd` - List all users
+25. `usermod -G newgroup username` - Remove a user from the default group and add them to a new group
