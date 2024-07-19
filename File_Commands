@@ -1,0 +1,58 @@
+- `touch file-name` - Used to create a single file
+- `touch f1 f2 f3` - Used to create multiple files
+- `touch file{1..5}` - Create 5 files at a time
+- `rm file` - Used to remove a single file
+- `rm f1 f2 f3` - Used to remove multiple files
+- `rm file{1..5}` - Used to remove 5 files
+- `rm -f filename` - Used to remove a file without permission
+- `rm -f *` - Used to remove all files at a time
+- `mkdir folder1` - Used to create a single folder
+- `mkdir f1 f2 f3` - Used to create multiple folders
+- `mkdir folder{1..7}` - Used to create 7 folders
+- `touch foldername/filename` - Used to create a file inside a folder
+- `mkdir foldername/foldername` - Used to create a folder inside a folder
+- `mkdir -p foldername/foldername/foldername` - Used to create folders inside a folder
+- `cd foldername` - Used to change the directory
+- `cd ..` - Used to go one step back
+- `cd -` - Used to go back to the previous directory
+- `cd` - Used to go to the root directory
+- `cd /` - To change the pwd to root directory which is the topmost/outermost parent directory
+- `pwd` - Present working directory
+- `rmdir folder` - Used to remove an empty directory
+- `rmdir *` - Used to remove all empty directories
+- `rm -rf *` - Used to remove all files and folders at a time
+- `ll` - Used to see all the files along with data
+- `ls` - Used to see only file names
+- `ls folder1` - Used to see the list of files present in folder1
+- `ll -a` - Used to see hidden files
+- `ll -r` - Used to see the files in reverse order
+- `ll -t` - Used to see the latest files on top
+- `ll -ltr` - To list the files in long listing format sorted by modification time, newest first, and then in reverse order
+- `cat>filename` - Used to overwrite the data in a file
+- `cat>>filename` - Used to append data into a file
+- `cat filename` - Used to read the data in a file
+- `cat -n filename` - Used to read the data along with line numbers
+- `tac filename` - Displays the file content in reverse (last line first)
+- `rev filename` - Used to reverse the content in a file
+- `cat f1 f2 f3` - Used to see all the files' data at a time
+- `more f1 f2 f3` - Used to see all the files' data at a time with percentages
+- `head filename` - Used to print the first 10 lines of a file
+- `tail filename` - Used to print the last 10 lines of a file
+- `sed -n '5,9p' filename` - Used to print the lines between 5 to 9
+- `sed -n '7p' filename` - Used to print the 7th line
+- `head -n 8 filename` - Prints 8 lines in a file
+- `tail -n 4 filename` - Used to print the last 4 lines of a file
+- `wc filename` - Used to get the number of lines, words, and letters in a file
+- `wc -l filename` - Used to get only the number of lines in a file
+- `wc -w filename` - Used to get the number of words in a file
+- `wc -c filename` - Used to get the number of characters in a file
+- `cp file1 file2` - Used to copy the data from file1 to file2
+- `cat file1 >> file2` - Used to append the data from file1 to file2
+- `cat file1 | tee file2 file3 file4` - Used to copy the data from file1 to file2, file3, and file4
+- `cat file1 | tee -a file2 file3 file4` - Used to append the data from file1 to file2, file3, and file4
+- `cp file1 folder1` - Used to copy file1 to folder1
+- `mv file1 file2` - Used to move the data from file1 to file2
+- `mv file1 folder1` - Used to move file1 to folder1
+- `echo folder{2..7} | xargs -n 1 cp -v folder1/*` - Copy files from folder1 to folder2 through folder7 at a time
+- `cmp file1 file2` - Used to compare two files
+- `diff file1 file2` - Used to get the differences between two files
